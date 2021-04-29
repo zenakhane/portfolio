@@ -1,29 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../stylesheet/projects.css">
-   
-</head>
-<h1>
-    All My Projects
-</h1>
-
-<body>
-
-    <div class="projects">
-        <button class="button3">
-            <a href="https://zenakhane.github.io/basic-webpage/"> Basic webpage</a>
-           </button>
-           <button class="button3">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+   </head>
+   <div class="searchBar">
+      <a href="/portfolio/index.html">Home</a>
+      <a href="./mustRead.html">Must Read</a>
+   </div>
+   <body>
+      <div class="projectHead">
+         <h1>
+            All My Projects
+         </h1>
+      </div>
+      <h2>Front end projects</h2>
+      <div class="projects">
+         <div class="project1">
+            <button class="button3">
+            <a href="https://zenakhane.github.io/basic-webpage/" > Basic webpage</a>
+            </button>
+            <p><img src="../images/Webp.net-resizeimage.png" class="pics" alt="">
+               Basic webpage is for coders to understand simple grid and actually get a chance to experience simple grid.
+            </p>
+         </div>
+         <div class="project2">
+            <button class="button3">
             <a href="https://zenakhane.github.io/bootcamp_tests/">Test Driven Development</a>
-           </button>
-      
-      
-    </div>
-    
-</body>
+            </button>
+            <p><img src="../images/hnet-com-image--2-.png" class="pict" alt="">
+               TDD helps you decide how a software will behave before you write it.It is also used to increase quality of the software you are writing.
+            </p>
+         </div>
+         <div class="project3">
+            <button class="button3">
+            <a href="https://zenakhane.github.io/dom-intro/">Document Object Model</a>
+            </button>
+            <p><img src="../images/Webp.net-resizeimage (1).png" class="pics" alt="">
+               The DOM is used to gather and display information dynamically, 
+               also defines the logical structure of documents and the way a document is accessed and manipulated using JavaScript.
+            </p>
+         </div>
+      </div>
+      <h2>Back end projects</h2>
+      <div>
+         <p>To follow &#128512;&#128512;..</p>
+      </div>
+   </body>
 </html>
+<style>
+    body{
+    background-image: url(../images/markus-spiske-mhU5i2r7spo-unsplash.jpg);
+    background-repeat: no-repeat;
+}
+.navigate{
+    float: right;
+}
+.projectHead{
+    
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+    text-shadow:cadetblue;
+    text-decoration-style: solid;
+    font-size: 60px;
+    }
+    .projects{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 2%;
+        line-height: 1.8;
+       
+    }
+    .pics{
+        float: right;
+    }
+    .pict{
+        float: right;
+    }
+    .project3{
+        padding: 3px;
+    }
+    @media screen and (max-width:910px) {
+        .projects{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-gap: 2%;
+        }
+    
+        .pict{
+            float: left;
+        }
+    }
+</style>
